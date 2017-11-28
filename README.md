@@ -75,7 +75,7 @@ Fuente: [http://www.becal.gov.py/](http://www.becal.gov.py/)
 | Ranking de Área Específica             | Tipo de ranking utilizado para calificar el area especifica del postgrado en la Universidad de Destino                                                                   | String             |
 | Nº                                     | Numero de ranking del area especifica                                                                                                                                    | Integer            |
 | Ciudad de destino (en español)         | Nombre de la ciudad en la que se encuentra la Universidad de Destino                                                                                                     | String             |
-| País de Destino                        | Nombre del pais de destino en la que se encuentra la Universidad de Destino                                                                                              | String             |
+| País de Destino                        | Nombre del pais en el que se encuentra la Universidad de Destino                                                                                              | String             |
 | Meses de duración de estudios          | Cantidad de meses de duracion del postgrado adjudicado                                                                                                                   | Integer            |
 | Inicio (cobertura de beca)             | Fecha de Inicio de la cobertura de la beca                                                                                                                               | Date  (mm/dd/aaaa) |
 | Fin (cobertura de beca)                | Fecha de Fin de la cobertura de la beca                                                                                                                                  | Date (mm/dd/aaaa)  |
@@ -84,86 +84,21 @@ Fuente: [http://www.becal.gov.py/](http://www.becal.gov.py/)
 | Ciudad de Residencia                   | Nombre de la ciudad de Residencia del becado                                                                                                                             | String             |
 | Departamento de Residencia             | Nombre del Departamento de Residencia del becado                                                                                                                         | String             |
 | Nivel socioeconómico                   | Codigo del nivel socio-economico del becado                                                                                                                              | Integer            |
-| Tiempo de cobertura                    | tiempo de cobertura representado en meses                                                                                                                                | Integer            |
+| Tiempo de cobertura                    | Tiempo de cobertura representado en meses                                                                                                                                | Integer            |
 | Contrato Nº                            | Numero de contrato                                                                                                                                                       | String             |
 | Fecha firma de Contrato                | Fecha de la firma del contrato del becado                                                                                                                                | Date (mm/dd/aaaa)  |
-| Fecha firma de Adenda                  | fecha de la firma de la adenda del becado                                                                                                                                | Date (mm/dd/aaaa)  |
+| Fecha firma de Adenda                  | Fecha de la firma de la adenda del becado                                                                                                                                | Date (mm/dd/aaaa)  |
+
 #### Datasets2 - becal-cobertura.csv
 
-<table>
-  <thead>
-    <tr>
-        <th>Nombre de Columna</th>
-        <th>Descripcion</th>
-        <th>Tipo de Dato</th>
-        <th>Restricciones</th>
-        <th>Ejemplos</th>
-    </tr>
-   </thead>
-   <tbody>
-    <tr>
-        <td>No</td>
-        <td>Numero secuencial, identificador del registro</td>
-        <td>Integer</td>
-        <td>-</td>
-        <td>1</td>
-    </tr>
-    <tr>
-        <td>C.I.</td>
-        <td>Descripcion</td>
-        <td>Tipo de Dato</td>
-        <td>Restricciones</td>
-        <td>Ejemplos</td>
-    </tr>
-    <tr>
-        <td>Nombre y Apellido</td>
-        <td>Descripcion</td>
-        <td>Tipo de Dato</td>
-        <td>Restricciones</td>
-        <td>Ejemplos</td>
-    </tr>
-    <tr>
-        <td>Tipo de Beca (según Programa aprobado)</td>
-        <td>Descripcion</td>
-        <td>Tipo de Dato</td>
-        <td>Restricciones</td>
-        <td>Ejemplos</td>
-    </tr>
-    <tr>
-        <td>Maestria / Doctorado</td>
-        <td>Numero secuencial, identificador del registro</td>
-        <td>Integer</td>
-        <td>-</td>
-        <td>1</td>
-    </tr>
-    <tr>
-        <td>Universidad de Destino</td>
-        <td>Descripcion</td>
-        <td>Tipo de Dato</td>
-        <td>Restricciones</td>
-        <td>Ejemplos</td>
-    </tr>
-    <tr>
-        <td>Pais</td>
-        <td>Descripcion</td>
-        <td>Tipo de Dato</td>
-        <td>Restricciones</td>
-        <td>Ejemplos</td>
-    </tr>
-    <tr>
-        <td>Dept. de Origen</td>
-        <td>Descripcion</td>
-        <td>Tipo de Dato</td>
-        <td>Restricciones</td>
-        <td>Ejemplos</td>
-    </tr>
-    <tr>
-        <td>Total General</td>
-        <td>Numero secuencial, identificador del registro</td>
-        <td>Integer</td>
-        <td>-</td>
-        <td>1</td>
-    </tr> 
-   </tbody>
-</table>
-
+| Columna                                | Descripcion                                                      | Tipo de Dato |
+|----------------------------------------|------------------------------------------------------------------|--------------|
+| No                                     | Numero secuencial, identificador del registro                    | Integer      |
+| C.I.                                   | Cedula de Identidad del Becado                                   | String       |
+| Nombre y Apellido                      | Nombre y Apellido del Becado                                     | String       |
+| Tipo de Beca (según Programa aprobado) | xxxxxxxxx                                                        | xxxxx        |
+| Maestria / Doctorado                   | Nombre del postgrado adjudicado al becado                        | String       |
+| Universidad de Destino                 | Nombre de la Universidad a la que ira el becado                  | String       |
+| Pais                                   | Nombre del pais en el que se encuentra la Universidad de Destino | String       |
+| Dept. de Origen                        | Nombre del Departamento de nacimiento del becado                 | String       |
+| Total General                          | xxxxxx                                                           | xxxxxx       |
