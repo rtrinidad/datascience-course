@@ -37,3 +37,68 @@ Completar el formulario de inscripción al curso [aquí](https://goo.gl/forms/tO
 4. Análisis Exploratorio de datos
 5. Inferencia Estadística
 6. Aprendizaje supervisado
+
+## PROYECTO BECAL
+
+### Programa Nacional de Becas de Postgrados en el Exterior - BECAL
+
+Becas destinadas a egresados de una carrera con el fin de llevar a cabo sus estudios de especialización (maestrías o doctorados en un país extranjero). El principal desafío de BECAL es mejorar la oferta del capital humano avanzado, mediante el financiamiento de becas de estudios de entrenamiento docente y postgrados en centros de excelencia del exterior. El mismo, tiene por objetivo contribuir a aumentar los niveles de generación y aplicación de conocimiento en las áreas de Ciencias y Tecnología (CyT) y en los niveles de aprendizaje en la educación. El principal problema a ser abordado por este programa es la baja capacidad del país para generar y aplicar conocimiento requerido para el desarrollo.
+
+Fuente: [http://www.becal.gov.py/](http://www.becal.gov.py/)
+
+### DATASETS
+
+#### Datasets1 - becal2017.csv
+
+| Columna                                | Descripcion                                                                                                                                                              | Tipo de Dato       |
+|----------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------|
+| Nro                                    | Numero secuencial, identificador del registro                                                                                                                            | Integer            |
+| Condicion                              | Tipo de condicion del becado                                                                                                                                             | String             |
+| Nro                                    | Numero secuencial                                                                                                                                                        | Integer            |
+| Tipo de Convocatoria                   | Descripcion del tipo de convocatoria realizada                                                                                                                           | String             |
+| Fecha de Adjudicacion                  | Fecha de adjudicacion de la beca                                                                                                                                         | String             |
+| C.I.                                   | Cedula de Identidad del becado                                                                                                                                           | String             |
+| Sexo                                   | Sexo del becado [Femenino - Masculino]                                                                                                                                   | String             |
+| Edad                                   | Edad del becado                                                                                                                                                          | String             |
+| Funcionario Público (Institución)      | Institucion donde trabaja el becado en caso de ser Funcionario Publico, caso contrario, se utiliza la palabra NO                                                         | String             |
+| Cargo                                  | Cargo en el cual se desempenha el becado en caso de ser Funcionario Publico, caso contrario, se utiliza la palabra No Aplica                                             | String             |
+| Goce de Sueldo                         | En caso de ser funcionario publico, se indica si es beneficiario del Art. 54 y 56 de la ley 1.626 de la Funcion Publica, caso contrario, se utiliza la palabra No Aplica | String             |
+| Tipo de Beca (según Programa aprobado) | Se indica el tipo de beca que fuera adjudicada por el becado                                                                                                             | String             |
+| Área de la ciencia                     | Categoria del area de ciencia bajo el cual se encuentra la beca adjudicada                                                                                               | String             |
+| Disciplina                             | Tipo de disciplina en el cual se enmarca la beca adjudicada                                                                                                              | String             |
+| Sector priorizado Conacyt              | Categoria del sector priorizado por la institucion publica CONACYT                                                                                                       | String             |
+| Subsector priorizado                   | Categoria del subsector priorizado                                                                                                                                       | String             |
+| Maestría / Doctorado                   | Nombre del postgrado adjudicado al becado                                                                                                                                | String             |
+| Universidad de Destino                 | Nombre de la Universidad en la se realizara el postgrado                                                                                                                 | String             |
+| Ranking                                | Tipo de ranking utilizado para calificar la Universidad de Destino                                                                                                       | String             |
+| Nº                                     | Numero de ranking                                                                                                                                                        | Integer            |
+| Ranking de Área Específica             | Tipo de ranking utilizado para calificar el area especifica del postgrado en la Universidad de Destino                                                                   | String             |
+| Nº                                     | Numero de ranking del area especifica                                                                                                                                    | Integer            |
+| Ciudad de destino (en español)         | Nombre de la ciudad en la que se encuentra la Universidad de Destino                                                                                                     | String             |
+| País de Destino                        | Nombre del pais en el que se encuentra la Universidad de Destino                                                                                              | String             |
+| Meses de duración de estudios          | Cantidad de meses de duracion del postgrado adjudicado                                                                                                                   | Integer            |
+| Inicio (cobertura de beca)             | Fecha de Inicio de la cobertura de la beca                                                                                                                               | Date  (mm/dd/aaaa) |
+| Fin (cobertura de beca)                | Fecha de Fin de la cobertura de la beca                                                                                                                                  | Date (mm/dd/aaaa)  |
+| Ciudad de Origen                       | Nombre de la Ciudad de nacimiento del becado                                                                                                                             | String             |
+| Departamento de Origen                 | Nombre del Departamento de nacimiento del becado                                                                                                                         | String             |
+| Ciudad de Residencia                   | Nombre de la ciudad de Residencia del becado                                                                                                                             | String             |
+| Departamento de Residencia             | Nombre del Departamento de Residencia del becado                                                                                                                         | String             |
+| Nivel socioeconómico                   | Codigo del nivel socio-economico del becado                                                                                                                              | Integer            |
+| Tiempo de cobertura                    | Tiempo de cobertura representado en meses                                                                                                                                | Integer            |
+| Contrato Nº                            | Numero de contrato                                                                                                                                                       | String             |
+| Fecha firma de Contrato                | Fecha de la firma del contrato del becado                                                                                                                                | Date (mm/dd/aaaa)  |
+| Fecha firma de Adenda                  | Fecha de la firma de la adenda del becado                                                                                                                                | Date (mm/dd/aaaa)  |
+
+#### Datasets2 - becal-cobertura.csv
+
+| Columna                                | Descripcion                                                      | Tipo de Dato |
+|----------------------------------------|------------------------------------------------------------------|--------------|
+| No                                     | Numero secuencial, identificador del registro                    | Integer      |
+| C.I.                                   | Cedula de Identidad del Becado                                   | String       |
+| Nombre y Apellido                      | Nombre y Apellido del Becado                                     | String       |
+| Tipo de Beca (según Programa aprobado) | xxxxxxxxx                                                        | xxxxx        |
+| Maestria / Doctorado                   | Nombre del postgrado adjudicado al becado                        | String       |
+| Universidad de Destino                 | Nombre de la Universidad a la que ira el becado                  | String       |
+| Pais                                   | Nombre del pais en el que se encuentra la Universidad de Destino | String       |
+| Dept. de Origen                        | Nombre del Departamento de nacimiento del becado                 | String       |
+| Total General                          | xxxxxx                                                           | xxxxxx       |
